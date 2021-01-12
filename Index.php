@@ -7,9 +7,9 @@ require __DIR__.'/vendor/autoload.php';
 
 
 //=================config de ligação ao discord =============================
-$clientID = '795938977805893652';
-$clientSecret = 'BlqlfveQ_Tt4kbPaA4V69h598wPm8nOA';
-$token='Nzk1OTM4OTc3ODA1ODkzNjUy.X_Qp8A.z_A9EcgiVQUp0GvyOTlcIIu3DJQ';
+$clientID = '';
+$clientSecret = '';
+$token='';
 $discordBot = new DiscordClient($clientID, $clientSecret, $token);
 $loop = Factory::create();
 $discordBot->setLoopInterface($loop);
