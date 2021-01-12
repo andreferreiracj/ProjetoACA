@@ -1,0 +1,6 @@
+{
+    "name": "desktop/aca-project",
+    "require": {
+        "shanemcc/reactphp-discord": "^0.3.0"
+    }
+}
