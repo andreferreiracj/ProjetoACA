@@ -3,6 +3,11 @@ By Bernardo Cabral
 By André Ferreira
 
 Discord bot for movie recommendations and film news.
+====Objectives: 
+Film recommendations from arrays with the specific genre.
+Scrapper of news from a film news website.
+====Acomplished:
+Film recommendations from arrays with the specific genre.
 
 You gotta go to the discord developer portal and use the tokens of your server.
 
