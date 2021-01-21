@@ -4,7 +4,8 @@ use React\EventLoop\Factory;
 use shanemcc\discord\DiscordClient;
 require "film.php";
 require __DIR__.'/vendor/autoload.php';
-
+require_once "bot.php";
+const noticia = "http://www.sensesofcinema.com/";
 
 //=================config de ligação ao discord =============================
 $clientID = '';
@@ -89,6 +90,11 @@ if(strtolower($data['content']) == '!comedy') {
   $response5= array_rand($comedyFilms);
   $discordBot->sendChannelMessage($data['guild_id'], $data['channel_id'], $comedyFilms[$response5]->__toString() . "\r\n" . 'haha very funny');
         }
+if(strtolower($data['content']) == '!noticias') {
+  $bot = new bot ();
+  $bot->devolverHtml(noticia);
+  $discordBot->sendChannelMessage($data['guild_id'], $data['channel_id'], $bot->receberTags() . "\r\n" . 'Latest news');
+         }	
 });
 
 $discordBot->connect();
