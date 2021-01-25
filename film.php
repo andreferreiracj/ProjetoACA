@@ -5,9 +5,8 @@ class film {
     public  $description;
     public  $genre;
     public  $director;
-    
-    
-
+    public  $link;
+  
     //========================GETS E SETS==============================
     //get e set do titulo
     function setTitle( $title) {
@@ -36,11 +35,12 @@ class film {
       
 
       //=====================Construtores================================
-      function __construct($title,$description,$genre,$director) {
+      function __construct($title,$description,$genre,$director,$link) {
         $this->title = $title;
         $this->description = $description;
         $this->genre = $genre;
         $this->director = $director;
+        $this->link = $link;
        
       }
     
@@ -51,10 +51,8 @@ class film {
         ' Title: ' . $this->title  . "\r\n" . 
         ' Description: ' . $this->description  . "\r\n" .
         ' Genre: ' . $this->genre . "\r\n" .
-        ' Director: ' . $this->director;
-       
-
-       
+        ' Director: ' . $this->director . "\r\n" .
+        ' Imdb: ' . $this->link;
     }
      
 }
