@@ -50,7 +50,7 @@ if(strtolower($data['content']) == '!drama') {
 	
 if(strtolower($data['content']) == '!action') {
   $film9 = new film("Bad Boys","Two hip detectives protect a witness to a murder while investigating a case of stolen heroin from the evidence storage room from their police precinct.",
-   "action","Michael Bay");
+   "action","Michael Bay","https://www.imdb.com/title/tt0112442/");
    $film10 = new film("American Ultra","A stoner - who is in fact a government agent - is marked as a liability and targeted for extermination. But he's too well-trained and too high for them to handle.",
    "action","Nima Nourizadeh","https://www.imdb.com/title/tt3316948/?ref_=fn_al_tt_1");
    $film11 = new film("Tenet","Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
